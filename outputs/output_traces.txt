@@ -1,0 +1,125 @@
+============================================================
+Trace File : traceFile.txt
+Mode       : 0
+============================================================
+
+==== Cache Dump @ Trace Line 7 ====
+
+L1I contents (valid lines only):
+  Set      Way  Tag    MESI LRU  Dirty 
+  ----     ---- ----   ---- ---- ----- 
+  ----     ---- ----   ---- ---- ----- 
+
+L1D contents (valid lines only):
+  Set      Way  Tag    MESI LRU  Dirty 
+  ----     ---- ----   ---- ---- ----- 
+  0x31D8   0    0x481   M    011  1     
+  0x31D8   1    0x582   E    100  0     
+  0x31D8   2    0x594   E    101  0     
+  0x31D8   3    0x621   E    110  0     
+  0x31D8   4    0x111   M    111  1     
+  ----     ---- ----   ---- ---- ----- 
+==== End Dump ====
+
+==== Final Summary ====
+L1I stats:
+  Reads   : 0
+  Writes  : 0
+  Hits    : 0
+  Misses  : 0
+  HitRate : 0.00%
+L1D stats:
+  Reads   : 3
+  Writes  : 3
+  Hits    : 1
+  Misses  : 5
+  HitRate : 16.67%
+============================================================
+
+============================================================
+Trace File : traceFile2.txt
+Mode       : 0
+============================================================
+
+==== Cache Dump @ Trace Line 21 ====
+
+L1I contents (valid lines only):
+  Set      Way  Tag    MESI LRU  Dirty 
+  ----     ---- ----   ---- ---- ----- 
+  0x048C   0    0x198   E    100  0     
+  0x048C   1    0x200   E    101  0     
+  0x048C   2    0x202   E    110  0     
+  0x048C   3    0x204   E    111  0     
+  ----     ---- ----   ---- ---- ----- 
+
+L1D contents (valid lines only):
+  Set      Way  Tag    MESI LRU  Dirty 
+  ----     ---- ----   ---- ---- ----- 
+  0x048C   0    0x198   E    110  0     
+  0x048C   1    0x255   M    000  1     
+  0x048C   2    0x266   M    001  1     
+  0x048C   3    0x593   E    010  0     
+  0x048C   4    0x483   E    011  0     
+  0x048C   5    0x777   E    100  0     
+  0x048C   6    0x535   S    111  0     
+  0x048C   7    0x221   E    101  0     
+  0x048D   0    0x593   M    111  1     
+  0x2EAE   1    0x600   E    111  0     
+  ----     ---- ----   ---- ---- ----- 
+==== End Dump ====
+
+==== Final Summary ====
+L1I stats:
+  Reads   : 4
+  Writes  : 0
+  Hits    : 0
+  Misses  : 4
+  HitRate : 0.00%
+L1D stats:
+  Reads   : 9
+  Writes  : 5
+  Hits    : 2
+  Misses  : 12
+  HitRate : 14.29%
+============================================================
+
+============================================================
+Trace File : all.din
+Mode       : 0
+============================================================
+
+==== Final Summary ====
+L1I stats:
+  Reads   : 2137414
+  Writes  : 0
+  Hits    : 2133958
+  Misses  : 3456
+  HitRate : 99.84%
+L1D stats:
+  Reads   : 440985
+  Writes  : 254081
+  Hits    : 692961
+  Misses  : 2105
+  HitRate : 99.70%
+============================================================
+
+============================================================
+Trace File : cc1.din
+Mode       : 0
+============================================================
+
+==== Final Summary ====
+L1I stats:
+  Reads   : 757341
+  Writes  : 0
+  Hits    : 754368
+  Misses  : 2973
+  HitRate : 99.61%
+L1D stats:
+  Reads   : 159631
+  Writes  : 83030
+  Hits    : 241528
+  Misses  : 1133
+  HitRate : 99.53%
+============================================================
+
